@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kenechukwu Ven-Anyanwuocha | Data Analyst</title>
+<style>
+  :root{
+    --bg:#0f172a; --panel:#111c34; --card:#16213c; --line:#243357;
+    --text:#e8eefc; --muted:#9fb0d0; --accent:#4f9cf9; --accent2:#38bdf8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+        background:var(--bg);color:var(--text);line-height:1.6}
+  a{color:var(--accent2);text-decoration:none}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+
+  header{position:sticky;top:0;z-index:10;background:rgba(15,23,42,.85);
+         backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav{display:flex;justify-content:space-between;align-items:center;height:60px}
+  nav .brand{font-weight:700;letter-spacing:.5px}
+  nav ul{display:flex;gap:22px;list-style:none}
+  nav a{color:var(--muted);font-size:14px}
+  nav a:hover{color:var(--text)}
+
+  .hero{padding:90px 0 60px}
+  .hero .tag{color:var(--accent);font-weight:600;letter-spacing:1px;font-size:13px;text-transform:uppercase}
+  .hero h1{font-size:44px;line-height:1.15;margin:12px 0 14px}
+  .hero p{color:var(--muted);font-size:18px;max-width:640px}
+  .cta{margin-top:26px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{padding:11px 20px;border-radius:8px;font-weight:600;font-size:14px;display:inline-block}
+  .btn.primary{background:var(--accent);color:#04101f}
+  .btn.ghost{border:1px solid var(--line);color:var(--text)}
+  .btn:hover{transform:translateY(-1px)}
+
+  section{padding:46px 0;border-top:1px solid var(--line)}
+  h2.section{font-size:14px;text-transform:uppercase;letter-spacing:2px;color:var(--accent);margin-bottom:22px}
+
+  .about p{color:var(--muted);max-width:720px;margin-bottom:12px}
+
+  .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+  .skill{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+  .skill h3{font-size:14px;margin-bottom:6px}
+  .skill span{color:var(--muted);font-size:13px}
+
+  .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column}
+  .thumb{display:block;width:calc(100% + 40px);margin:-20px -20px 16px;border-bottom:1px solid var(--line);
+         border-radius:12px 12px 0 0;background:#fff;padding:10px;object-fit:contain;height:180px}
+  .thumb.brand{background:linear-gradient(135deg,#7c3aed,#4f9cf9);height:180px;display:flex;
+         align-items:center;justify-content:center;color:#fff;font-size:24px;font-weight:800;
+         letter-spacing:1px;padding:0}
+  .badge{display:inline-block;background:rgba(56,189,248,.15);color:var(--accent2);border:1px solid var(--line);
+         font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;margin-bottom:8px}
+  .card h3{font-size:18px;margin-bottom:8px}
+  .card .links2{display:flex;gap:14px;margin-top:2px}
+  .card .stack{color:var(--accent2);font-size:12.5px;font-weight:600;margin-bottom:10px}
+  .card p{color:var(--muted);font-size:14.5px;flex-grow:1}
+  .card .metrics{list-style:none;margin:12px 0 14px}
+  .card .metrics li{font-size:13.5px;color:var(--text);padding:3px 0 3px 18px;position:relative}
+  .card .metrics li:before{content:"›";position:absolute;left:0;color:var(--accent)}
+  .card a.repo{font-size:13px;font-weight:600}
+
+  .contact{text-align:center;padding-bottom:70px}
+  .contact p{color:var(--muted);margin-bottom:18px}
+  .links{display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+  footer{color:var(--muted);font-size:13px;text-align:center;padding:26px 0;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<header><div class="wrap"><nav>
+  <div class="brand">Kenechukwu V.</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav></div></header>
+
+<div class="wrap">
+
+  <section class="hero" id="top">
+    <div class="tag">Data Analyst</div>
+    <h1>I turn messy data into decisions.</h1>
+    <p>Computer Science honours student at Trent University who works in Python, SQL, and Power BI.
+       I like the part of analysis where a number changes what a team does next, whether that is
+       predicting churn, reading an A/B test, or tracking retention over time.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">View projects</a>
+      <a class="btn ghost" href="Kenechukwu_Ven-Anyanwuocha_Data_Analyst_Resume.pdf">Download resume</a>
+      <a class="btn ghost" href="https://github.com/TheBigManKen">GitHub</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="section">About</h2>
+    <p>I am finishing an Honours BSc in Computer Science with a strong average and a focus on
+       data. My externship with Breaking Games had me cleaning and analyzing e-commerce sales data
+       to help with pricing and product calls, and my coursework has kept me building dashboards
+       and reports in Power BI.</p>
+    <p>Outside of assigned work I build my own analytics projects end to end, from generating and
+       cleaning the data to modelling it and writing up what I would actually recommend. Every
+       project below comes with its code and a write up of what I found.</p>
+    <p>I also co-built <a href="https://www.blitz-speed-dating.com">Blitz Speed Dating</a>, a live
+       web app that pairs users into one-on-one speed-dating sessions in real time, similar to
+       Omegle. It is live, now past 130 signups, and it keeps me close to the product, data, and
+       user side of something real.</p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><h3>Languages</h3><span>Python, SQL, C</span></div>
+      <div class="skill"><h3>Analysis</h3><span>pandas, NumPy, scikit-learn, SciPy</span></div>
+      <div class="skill"><h3>Visualization</h3><span>Power BI, DAX, Power Query, Matplotlib, Excel</span></div>
+      <div class="skill"><h3>Databases &amp; Tools</h3><span>SQLite, Git/GitHub, Jupyter, Linux</span></div>
+      <div class="skill"><h3>Methods</h3><span>A/B testing, cohort analysis, churn modelling, dashboarding</span></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section">Projects</h2>
+    <div class="projects">
+
+      <div class="card">
+        <img class="thumb" src="https://raw.githubusercontent.com/TheBigManKen/sales-dashboard/main/preview.png" alt="Interactive e-commerce sales dashboard" onerror="this.style.display='none'">
+        <span class="badge">Live demo</span>
+        <h3>E-Commerce Sales Dashboard</h3>
+        <div class="stack">Plotly.js · JavaScript · HTML</div>
+        <p>An interactive dashboard over 5,000+ orders with KPI cards, live channel filtering, and
+           dual-axis promotion analysis, all rendered in the browser.</p>
+        <ul class="metrics">
+          <li>$144.8K revenue tracked, Amazon at 37% share</li>
+          <li>December peak of $19.3K</li>
+        </ul>
+        <div class="links2">
+          <a class="repo" href="https://thebigmanken.github.io/sales-dashboard/">Live site →</a>
+          <a class="repo" href="https://github.com/TheBigManKen/sales-dashboard">Repo →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="thumb" src="https://raw.githubusercontent.com/TheBigManKen/ecommerce-sales-analysis/main/visualizations/01_monthly_revenue.png" alt="Monthly revenue trend" onerror="this.style.display='none'">
+        <h3>E-Commerce Sales Analysis &amp; Strategy</h3>
+        <div class="stack">Python · pandas · Matplotlib</div>
+        <p>End to end analysis of 5,000+ orders for a board game publisher, turning the numbers into
+           channel, pricing, and regional recommendations.</p>
+        <ul class="metrics">
+          <li>December revenue 2.3x February</li>
+          <li>Flagged a product with a 7.1% return rate</li>
+        </ul>
+        <a class="repo" href="https://github.com/TheBigManKen/ecommerce-sales-analysis">View repo →</a>
+      </div>
+
+      <div class="card">
+        <img class="thumb" src="assets/churn.png" alt="Churn rate by contract, payment method, and internet service">
+        <h3>Customer Churn Analysis &amp; Prediction</h3>
+        <div class="stack">Python · pandas · scikit-learn</div>
+        <p>Found what drives churn across 7,500 customers and built a model to flag the customers
+           most likely to leave.</p>
+        <ul class="metrics">
+          <li>Month-to-month churn 51.8% vs 7.9% on two-year</li>
+          <li>Logistic model, 0.798 ROC-AUC, recalls 75% of churners</li>
+        </ul>
+        <a class="repo" href="https://github.com/TheBigManKen/customer-churn-analysis">View repo →</a>
+      </div>
+
+      <div class="card">
+        <img class="thumb" src="assets/abtest.png" alt="Conversion rate comparison with confidence intervals">
+        <h3>A/B Test Analysis</h3>
+        <div class="stack">Python · SciPy</div>
+        <p>Analyzed a 16,000 user checkout experiment end to end and made the call on whether to
+           ship the new design.</p>
+        <ul class="metrics">
+          <li>+10.3% conversion lift, p = 0.023</li>
+          <li>Revenue per user up from $6.32 to $7.38</li>
+        </ul>
+        <a class="repo" href="https://github.com/TheBigManKen/ab-test-analysis">View repo →</a>
+      </div>
+
+      <div class="card">
+        <img class="thumb" src="assets/cohort.png" alt="Monthly retention matrix by signup cohort">
+        <h3>Cohort Retention &amp; LTV</h3>
+        <div class="stack">Python · pandas</div>
+        <p>Built retention matrices across 18 signup cohorts and estimated what a customer is
+           worth over their lifetime.</p>
+        <ul class="metrics">
+          <li>Month-1 retention 77.5%, month-3 53.0%</li>
+          <li>Estimated average LTV near $123</li>
+        </ul>
+        <a class="repo" href="https://github.com/TheBigManKen/cohort-retention-analysis">View repo →</a>
+      </div>
+
+      <div class="card">
+        <img class="thumb" src="assets/sql.png" alt="Revenue contribution by category">
+        <h3>SQL Analytics Portfolio</h3>
+        <div class="stack">SQL · SQLite</div>
+        <p>Answered seven business questions on a 70,000+ row retail database using joins, window
+           functions, CTEs, and cohort logic.</p>
+        <ul class="metrics">
+          <li>Electronics drives 45.4% of revenue</li>
+          <li>Segment and channel level breakdowns</li>
+        </ul>
+        <a class="repo" href="https://github.com/TheBigManKen/sql-analytics-portfolio">View repo →</a>
+      </div>
+
+      <div class="card">
+        <div class="thumb brand">BLITZ</div>
+        <span class="badge">Live app · co-founder</span>
+        <h3>Blitz Speed Dating</h3>
+        <div class="stack">Web app · real-time matchmaking</div>
+        <p>A live web app I co-built that pairs users into one-on-one speed-dating sessions in real
+           time, similar to Omegle. I own product, the matchmaking flow, and onboarding.</p>
+        <ul class="metrics">
+          <li>Live and past 130 signups</li>
+          <li>Launched January 2026</li>
+        </ul>
+        <a class="repo" href="https://www.blitz-speed-dating.com">Visit the app →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section">Contact</h2>
+    <p>Open to data analyst roles and internships. The fastest way to reach me is email.</p>
+    <div class="links">
+      <a href="mailto:kenevenanyanwuocha@trentu.ca">Email</a>
+      <a href="https://www.linkedin.com/in/kenechukwu-ven-anyanwuocha">LinkedIn</a>
+      <a href="https://github.com/TheBigManKen">GitHub</a>
+      <a href="Kenechukwu_Ven-Anyanwuocha_Data_Analyst_Resume.pdf">Resume</a>
+    </div>
+  </section>
+
+</div>
+
+<footer>Built and maintained by Kenechukwu Ven-Anyanwuocha · Peterborough, ON</footer>
+
+</body>
+</html>
